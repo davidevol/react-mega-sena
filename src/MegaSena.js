@@ -37,7 +37,7 @@ export class MegaSena extends React.Component {
             <img src="/logo-mega.png" width="32" height="32" alt="mega-sena-logo" />
             <p className="ms-3 mt-3 mb-3 text-center fs-1 text-success">Mega-Sena</p>
           </div>
-          { /*se pressionado o botão, a atualização do estado mostra a lista*/ 
+          {
           this.state.mostrarComponente && (
             <div className="flex-fill align-items-center mb-3">
               <ul className="list-group list-group-horizontal justify-content-center">
@@ -62,8 +62,6 @@ export class MegaSena extends React.Component {
               </ul>
             </div>
           )}
-
-          {/* TODO PRECISA DAR WRAP CONTENT NO BOTÃO */}
           <button
             onClick={this.geraJogo}
             className="btn btn-outline-primary fs-4 btn-outline-success "
